@@ -34,3 +34,5 @@ fun app() {
 }
 
 fun plus(a: Int, b: Int) = a + b
+
+fun minus(a: Int, b: Int) = a - b
