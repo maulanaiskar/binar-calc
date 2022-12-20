@@ -27,7 +27,7 @@ fun app() {
         when (pilih) {
             1 -> println("Hasil penambahan antara $a + $b adalah ${plus(a, b)}")
             2 -> println("Hasil pengurangan antara $a - $b adalah ${minus(a, b)}")
-            3 -> println("Hasil pembagian antara $a / $b adalah ${bagi(a, b)}")
+            3 -> println("Hasil pembagian antara $a / $b adalah ${divided(a, b)}")
             4 -> println("Hasil perkalian antara $a - $b adalah ${multiplication(a, b)}")
         }
     } while (pilih > 4)
@@ -36,3 +36,10 @@ fun app() {
 fun plus(a: Int, b: Int) = a + b
 
 fun minus(a: Int, b: Int) = a - b
+
+fun divided(a: Int, b: Int) =
+    if (b == 0) {
+        throw IllegalArgumentException("Cannot divide by zero")
+    } else {
+        a / b
+    }
