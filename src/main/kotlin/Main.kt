@@ -28,7 +28,7 @@ fun app() {
             1 -> println("Hasil penambahan antara $a + $b adalah ${plus(a, b)}")
             2 -> println("Hasil pengurangan antara $a - $b adalah ${minus(a, b)}")
             3 -> println("Hasil pembagian antara $a / $b adalah ${divided(a, b)}")
-            4 -> println("Hasil perkalian antara $a - $b adalah ${multiplication(a, b)}")
+            4 -> println("Hasil perkalian antara $a - $b adalah ${multiply(a, b)}")
         }
     } while (pilih > 4)
 }
@@ -43,3 +43,5 @@ fun divided(a: Int, b: Int) =
     } else {
         a / b
     }
+
+fun multiply(a: Int, b: Int) = a * b
