@@ -9,13 +9,15 @@ fun app() {
         println("Pilih operasi yang akan digunakan")
         println("1. Tambah")
         println("2. Kurang")
-        println("3. Kali")
-        println("4. Bagi")
+        println("3. Bagi")
+        println("4. Kali")
         println("0. Selesai")
         print("Pilih salah satu: ")
         var pilih = readln().toInt()
 
         if (pilih == 0) {
+            break
+        } else if (pilih > 4){
             break
         }
 
@@ -30,7 +32,7 @@ fun app() {
             3 -> println("Hasil pembagian antara $a / $b adalah ${divided(a, b)}")
             4 -> println("Hasil perkalian antara $a - $b adalah ${multiply(a, b)}")
         }
-    } while (pilih > 4)
+    } while (pilih < 5)
 }
 
 fun plus(a: Int, b: Int) = a + b
